@@ -1,5 +1,7 @@
 ##SYNOPSIS
 
+    require "html"
+
     q= HTML.new {  
       html {
         head { title "My wonderful home page" }
