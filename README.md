@@ -1,3 +1,4 @@
+#Example of `method_missing` and `Rake::TestTask`
 ##SYNOPSIS
 
     require "html"

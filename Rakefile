@@ -1,3 +1,5 @@
+$:.unshift '.'
+$:.unshift 'lib/'
 $:.unshift 'lib/'
 require 'rake/testtask'
 
@@ -5,7 +7,7 @@ task :t => FileList['test/tc*.rb'] do |t|
   puts "Running tests"
   t.prerequisites.each do |r|
     puts "Tests in #{r}"
-    require r
+    require "./"+r
   end
 end
 
